@@ -9,7 +9,6 @@ const navigation = [
   { name: 'HOME', href: '/' },
   { name: 'ABOUT ME', href: '/expertise' },
   { name: 'CASE STUDIES', href: '/case-studies' },
-  { name: 'ARCHIVE', href: '/archive' },
   { name: 'CONTACT', href: '/contact' },
 ]
 

@@ -77,12 +77,18 @@ export default function AboutPage() {
                     key={index}
                     className="flex items-center justify-center h-16"
                   >
-                    <Image
-                      src={company.logo}
-                      alt={company.name}
-                      width={150}
-                      height={60}
-                      className="max-w-full max-h-full w-auto h-auto object-contain brightness-0 invert"
+                    <div
+                      className="w-[150px] h-16 bg-gradient-to-r from-primary-400 to-accent-400"
+                      style={{
+                        maskImage: `url(${company.logo})`,
+                        WebkitMaskImage: `url(${company.logo})`,
+                        maskSize: 'contain',
+                        WebkitMaskSize: 'contain',
+                        maskRepeat: 'no-repeat',
+                        WebkitMaskRepeat: 'no-repeat',
+                        maskPosition: 'center',
+                        WebkitMaskPosition: 'center',
+                      }}
                     />
                   </div>
                 ))}
