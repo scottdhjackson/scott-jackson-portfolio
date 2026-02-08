@@ -22,7 +22,7 @@ export default function ContactPage() {
               </span>
             </h1>
             <p className="text-xl text-gray-400">
-              Looking to improve your SEO, analytics, or AI search visibility? Let's discuss
+              Looking to improve your SEO, analytics, or AI search visibility? Let&apos;s discuss
               how I can help your business grow.
             </p>
           </div>
@@ -95,7 +95,7 @@ export default function ContactPage() {
                 <div className="mt-8 p-6 glass-card rounded-lg border border-gray-800">
                   <h3 className="font-semibold mb-2 text-white">Availability</h3>
                   <p className="text-gray-400 text-sm">
-                    I'm currently available for consulting projects, technical SEO audits,
+                    I&apos;m currently available for consulting projects, technical SEO audits,
                     and ongoing SEO/analytics support. Typical response time: 24-48 hours.
                   </p>
                 </div>
