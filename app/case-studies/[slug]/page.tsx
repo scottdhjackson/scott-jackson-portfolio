@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { format } from 'date-fns'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
-import rehypeHighlight from 'rehype-highlight'
 import { getCaseStudyBySlug, getCaseStudySlugs, getAllCaseStudies } from '@/lib/mdx'
 import { generateMetadata as generateSiteMetadata } from '@/lib/metadata'
 import { getArticleSchema, getBreadcrumbSchema } from '@/lib/schema'
@@ -164,7 +163,6 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
               options={{
                 mdxOptions: {
                   remarkPlugins: [remarkGfm],
-                  rehypePlugins: [rehypeHighlight],
                 },
               }}
             />
