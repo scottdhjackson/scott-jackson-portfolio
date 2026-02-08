@@ -1,14 +1,20 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import { Metadata } from 'next'
 import { getFeaturedCaseStudies } from '@/lib/mdx'
 import CaseStudyCard from '@/components/CaseStudyCard'
+import EmailButton from '@/components/EmailButton'
 import {
   SITE_NAME,
   SITE_TAGLINE,
   PROOF_POINTS,
   SERVICES,
   SKILLS,
-  CONTACT_EMAIL,
 } from '@/lib/constants'
+
+export const metadata: Metadata = {
+  title: 'Scott Jackson - SEO, Data and AI',
+}
 
 export default function HomePage() {
   const featuredCaseStudies = getFeaturedCaseStudies(3)
@@ -21,9 +27,9 @@ export default function HomePage() {
           <div className="max-w-6xl">
             {/* Main Headline */}
             <h1 className="text-[15vw] md:text-[12vw] lg:text-[10rem] font-bold uppercase leading-[0.85] tracking-tighter mb-12">
-              <div className="text-white">SEO.</div>
-              <div className="text-white">DATA.</div>
-              <div className="text-gray-700">AI.</div>
+              <div className="text-primary-400">SEO.</div>
+              <div className="text-accent-400">DATA.</div>
+              <div className="text-green-400">AI.</div>
             </h1>
 
             {/* Supporting Text */}
@@ -41,7 +47,7 @@ export default function HomePage() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
               <Link href="/case-studies" className="btn-primary">
-                View Performance
+                View Case Studies
               </Link>
               <Link href="/contact" className="btn-secondary">
                 Get In Touch
@@ -56,8 +62,10 @@ export default function HomePage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-4">
-              <h2 className="text-xs uppercase tracking-[0.3em] text-gray-500 mb-8">
-                Core Systems
+              <h2 className="text-xs uppercase tracking-[0.3em] mb-8">
+                <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+                  Core Systems
+                </span>
               </h2>
             </div>
             <div className="lg:col-span-8">
@@ -81,8 +89,10 @@ export default function HomePage() {
         <section className="py-32 border-t border-white/10">
           <div className="container-custom">
             <div className="flex items-center justify-between mb-16">
-              <h2 className="text-xs uppercase tracking-[0.3em] text-gray-500">
-                Selected Performance
+              <h2 className="text-xs uppercase tracking-[0.3em]">
+                <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+                  Selected Case Studies
+                </span>
               </h2>
               <Link
                 href="/case-studies"
@@ -105,8 +115,10 @@ export default function HomePage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-4">
-              <h2 className="text-xs uppercase tracking-[0.3em] text-gray-500 mb-8">
-                Service Framework
+              <h2 className="text-xs uppercase tracking-[0.3em] mb-8">
+                <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+                  Expertise
+                </span>
               </h2>
             </div>
             <div className="lg:col-span-8">
@@ -132,8 +144,10 @@ export default function HomePage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-4">
-              <h2 className="text-xs uppercase tracking-[0.3em] text-gray-500 mb-8">
-                Technical Stack
+              <h2 className="text-xs uppercase tracking-[0.3em] mb-8">
+                <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
+                  Skills
+                </span>
               </h2>
             </div>
             <div className="lg:col-span-8">
@@ -169,9 +183,9 @@ export default function HomePage() {
               <Link href="/contact" className="btn-primary">
                 Get In Touch
               </Link>
-              <a href={`mailto:${CONTACT_EMAIL}`} className="btn-secondary">
+              <EmailButton className="btn-secondary">
                 Email Direct
-              </a>
+              </EmailButton>
             </div>
           </div>
         </div>

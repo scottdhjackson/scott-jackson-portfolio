@@ -1,6 +1,7 @@
 import { generateMetadata as generateSiteMetadata } from '@/lib/metadata'
-import { CONTACT_EMAIL, LINKEDIN_URL } from '@/lib/constants'
+import { LINKEDIN_URL } from '@/lib/constants'
 import ContactForm from '@/components/ContactForm'
+import ObfuscatedEmail from '@/components/ObfuscatedEmail'
 
 export const metadata = generateSiteMetadata({
   title: 'Contact',
@@ -58,12 +59,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1 text-white">Email</h3>
-                    <a
-                      href={`mailto:${CONTACT_EMAIL}`}
-                      className="text-primary-400 hover:text-primary-300 transition-colors"
-                    >
-                      {CONTACT_EMAIL}
-                    </a>
+                    <ObfuscatedEmail className="text-primary-400 hover:text-primary-300 transition-colors" />
                   </div>
                 </div>
 

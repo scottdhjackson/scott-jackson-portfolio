@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
-import { SITE_NAME, LINKEDIN_URL, CONTACT_EMAIL } from '@/lib/constants'
+import { SITE_NAME, LINKEDIN_URL } from '@/lib/constants'
+import EmailButton from './EmailButton'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -33,7 +36,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link href="/case-studies" className="text-gray-400 hover:text-white transition-colors">
-                    Performance
+                    Case Studies
                   </Link>
                 </li>
                 <li>
@@ -50,12 +53,9 @@ export default function Footer() {
               </h3>
               <ul className="space-y-3 text-xs">
                 <li>
-                  <a
-                    href={`mailto:${CONTACT_EMAIL}`}
-                    className="text-gray-400 hover:text-white transition-colors"
-                  >
+                  <EmailButton className="text-gray-400 hover:text-white transition-colors text-left">
                     Email
-                  </a>
+                  </EmailButton>
                 </li>
                 <li>
                   <a
@@ -73,8 +73,13 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10">
-          <div className="text-[10px] uppercase tracking-[0.3em] text-gray-600">
-            &copy; {currentYear} All Systems Operational
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-[10px] uppercase tracking-[0.3em] text-gray-600">
+              &copy; {currentYear} All Systems Operational
+            </div>
+            <div className="text-[10px] uppercase tracking-[0.3em] text-gray-600">
+              This website was vibe coded
+            </div>
           </div>
         </div>
       </div>

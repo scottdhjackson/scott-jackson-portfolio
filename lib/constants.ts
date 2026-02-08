@@ -54,3 +54,30 @@ export const PROOF_POINTS = [
   'SEO experimentation & A/B testing methodologies',
   'Custom data pipelines & automation with Python, SQL, and APIs',
 ]
+
+export const COMPANIES = [
+  {
+    name: 'Expedia',
+    logo: '/logos/Expedia_Logo.svg',
+  },
+  {
+    name: 'News UK',
+    logo: '/logos/News_UK_logo.svg',
+  },
+  {
+    name: 'Rabbies',
+    logo: '/logos/rabbies.webp',
+  },
+  {
+    name: 'Cotswold Co',
+    logo: '/logos/cotswold_co.png',
+  },
+  {
+    name: 'Danetti',
+    logo: '/logos/danetti.png',
+  },
+  {
+    name: 'Tentbox',
+    logo: '/logos/tentbox.webp',
+  },
+]
