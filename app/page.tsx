@@ -13,7 +13,7 @@ import {
 } from '@/lib/constants'
 
 export const metadata: Metadata = {
-  title: 'Scott Jackson - SEO, Data and AI',
+  title: 'Scott Jackson - SEO. Data. AI',
 }
 
 export default function HomePage() {
