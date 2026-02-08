@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, TWITTER_HANDLE } from './constants'
+import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from './constants'
 
 interface GenerateMetadataParams {
   title: string
@@ -51,7 +51,6 @@ export function generateMetadata({
       card: 'summary_large_image',
       title: fullTitle,
       description,
-      creator: TWITTER_HANDLE,
       images: [imageUrl],
     },
     robots: {
