@@ -35,12 +35,12 @@ export default function CaseStudyFilters({ caseStudies, allTags }: CaseStudyFilt
         {/* Search */}
         <div>
           <label htmlFor="search" className="sr-only">
-            Search case studies
+            Search work
           </label>
           <input
             type="text"
             id="search"
-            placeholder="Search case studies..."
+            placeholder="Search work..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full px-4 py-3 rounded-lg border border-gray-700 bg-black/50 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
@@ -91,7 +91,7 @@ export default function CaseStudyFilters({ caseStudies, allTags }: CaseStudyFilt
       ) : (
         <div className="text-center py-12 glass-card rounded-lg">
           <p className="text-gray-400">
-            No case studies found matching your criteria.
+            No work found matching your criteria.
           </p>
         </div>
       )}

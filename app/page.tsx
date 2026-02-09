@@ -47,7 +47,7 @@ export default function HomePage() {
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
               <Link href="/case-studies" className="btn-primary">
-                View Case Studies
+                View Work
               </Link>
               <Link href="/contact" className="btn-secondary">
                 Get In Touch
@@ -91,7 +91,7 @@ export default function HomePage() {
             <div className="flex items-center justify-between mb-16">
               <h2 className="text-xs uppercase tracking-[0.3em]">
                 <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-                  Selected Case Studies
+                  Selected Work
                 </span>
               </h2>
               <Link

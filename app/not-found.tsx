@@ -14,7 +14,7 @@ export default function NotFound() {
             Go Home
           </Link>
           <Link href="/case-studies" className="btn-secondary">
-            View Case Studies
+            View Work
           </Link>
         </div>
       </div>

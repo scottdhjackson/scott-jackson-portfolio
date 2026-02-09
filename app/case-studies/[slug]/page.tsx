@@ -57,7 +57,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
   const articleSchema = getArticleSchema(caseStudy)
   const breadcrumbSchema = getBreadcrumbSchema([
     { name: 'Home', url: SITE_URL },
-    { name: 'Case Studies', url: `${SITE_URL}/case-studies` },
+    { name: 'Work', url: `${SITE_URL}/case-studies` },
     { name: frontmatter.title, url: `${SITE_URL}/case-studies/${params.slug}` },
   ])
 
@@ -93,7 +93,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
                   href="/case-studies"
                   className="hover:text-primary-600 dark:hover:text-primary-400"
                 >
-                  Case Studies
+                  Work
                 </Link>
               </li>
               <li>/</li>
@@ -244,7 +244,7 @@ export default function CaseStudyPage({ params }: CaseStudyPageProps) {
                     d="M3 10h18M3 14h18"
                   />
                 </svg>
-                View All Case Studies
+                View All Work
               </Link>
             </div>
           </div>

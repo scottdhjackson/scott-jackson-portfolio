@@ -64,7 +64,7 @@ export function getArticleSchema(caseStudy: CaseStudy) {
     },
     url: `${SITE_URL}/case-studies/${slug}`,
     keywords: frontmatter.tags.join(', '),
-    articleSection: 'Case Studies',
+    articleSection: 'Work',
   }
 }
 

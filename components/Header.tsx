@@ -8,7 +8,8 @@ import { SITE_NAME } from '@/lib/constants'
 const navigation = [
   { name: 'HOME', href: '/' },
   { name: 'ABOUT ME', href: '/expertise' },
-  { name: 'CASE STUDIES', href: '/case-studies' },
+  { name: 'WORK', href: '/case-studies' },
+  { name: 'SIDE PROJECTS', href: '/side-projects' },
   { name: 'CONTACT', href: '/contact' },
 ]
 

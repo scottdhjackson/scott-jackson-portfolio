@@ -3,9 +3,9 @@ import { generateMetadata as generateSiteMetadata } from '@/lib/metadata'
 import CaseStudyFilters from '@/components/CaseStudyFilters'
 
 export const metadata = generateSiteMetadata({
-  title: 'Case Studies',
+  title: 'Work',
   description:
-    'Explore real-world SEO, analytics, and AI search optimisation case studies. See how I have helped businesses improve their search visibility, traffic, and conversions.',
+    'Explore real-world SEO, analytics, and AI search optimisation work. See how I have helped businesses improve their search visibility, traffic, and conversions.',
   path: '/case-studies',
 })
 
@@ -20,7 +20,7 @@ export default function CaseStudiesPage() {
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             <span className="bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent">
-              Case Studies
+              Work
             </span>
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl">
@@ -36,7 +36,7 @@ export default function CaseStudiesPage() {
         ) : (
           <div className="text-center py-12">
             <p className="text-gray-600 dark:text-gray-400">
-              No case studies available yet. Check back soon!
+              No work available yet. Check back soon!
             </p>
           </div>
         )}
